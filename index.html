@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SINI KAMAN EXPRESS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<nav class="navbar">
+    <div class="logo">SINI KAMAN</div>
+    <ul>
+        <li>Accueil</li>
+        <li>Services</li>
+        <li>Tracking</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1 class="glow">GLOBAL LOGISTICS POWER</h1>
+    <p>Afrique connectée au monde</p>
+    <button onclick="scrollToTracking()">Suivre un colis</button>
+</section>
+
+<section class="map-section">
+    <h2>Réseau Logistique Africain</h2>
+    <div class="map">
+        <div class="point abidjan"></div>
+        <div class="point lome"></div>
+        <div class="line-map"></div>
+    </div>
+</section>
+
+<section id="tracking" class="tracking">
+    <h2>Tracking Intelligent</h2>
+    <input type="text" placeholder="Numéro de colis">
+    <button onclick="track()">Rechercher</button>
+    <p id="result"></p>
+</section>
+
+<section class="services">
+    <div class="box">Transit Douanier</div>
+    <div class="box">Transport Premium</div>
+    <div class="box">Regroupement Express</div>
+</section>
+
+<!-- IA CHAT -->
+<div class="chat">
+    <div class="chat-header">Assistant</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input type="text" id="chatInput" placeholder="Posez votre question...">
+</div>
+
+<footer>
+    © 2026 SINI KAMAN EXPRESS
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
